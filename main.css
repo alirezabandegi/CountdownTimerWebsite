@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Gabarito", sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#timer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#timeDisplayer{
+    width: 190px;
+    font-size: 5rem;
+}
+.startTime{
+    background-color: #0da80d;
+    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.startTime svg{
+    width: 60px;
+    height: 60px;
+}
+.pauseTime{
+    background-color: #ff1f56;
+    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+    margin: 0 10px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.pauseTime svg{
+    width: 45px;
+    height: 45px;
+}
+#userSetTimeBtn{
+    background-color: #8b20ee;
+    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#userSetTimeBtn svg{
+    width: 40px;
+    height: 40px;
+}
+#setTimeInput{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid black;
+    transition: 0.5s;
+}
+#setTimeInput div{
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#setTimeInput div:last-child{
+    margin-right: 0;
+}
+#setTimeInput div svg{
+    width: 50px;
+    cursor: pointer;
+}
+#setTimeInput div p{
+    font-size: 4rem;
+}
